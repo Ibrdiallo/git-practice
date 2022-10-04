@@ -1,0 +1,47 @@
+
+
+header {
+    background-image: url("../images/apple-pie.jpg");
+    width: 100vw; 
+    height: 25vw;
+position: relative;
+}
+
+.backgroundtext {
+   
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+}
+
+
+
+
+.cooking {
+    position: relative;
+    margin: 0 auto;
+	display: block;
+    max-width: 100%;
+    
+}
+
+
+.instructions {
+   
+    text-align: center;
+    font-size: 35px;
+
+}
+
+.cuisson {
+    font-size: 20px;
+}
+
+
+.ingdir {
+    text-align: left;
+    font-size: 20px;
+}
