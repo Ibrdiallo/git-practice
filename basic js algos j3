@@ -1,0 +1,81 @@
+let hacker1 = "Astra"
+let hacker2 = "Gary"
+
+// Iteration 1: Names and Input
+
+
+console.log(`The driver name is ${hacker1}`)
+console.log(`The navigator name is ${hacker2}`)
+
+//  Iteration 2: Conditionals
+
+if (hacker1.length > hacker2.length) {
+    console.log("The Driver's name is longer than the navigator's name. It has " + hacker1.length + " characters.")
+  } else if (hacker1.length < hacker2.length) {
+    console.log("The Navigator's name is longer than the driver's name. It has " + hacker2.length + " characters.")
+  } else {
+    console.log("Both names have the same length.")
+  }
+
+console.log(`The driver has the longest name, it has ${result} characters.`)
+
+// Iteration 3: Loops
+
+var nomSepare = []
+for (let i = 0; i < hacker1.length; i++) {
+    reverseSplit.push(hacker1[i].toUpperCase());
+    reverseSplit.push(" ")
+
+}
+
+console.log(nomSepare.join(" "))
+
+
+ let reverseSplit = ""
+    for (var i = hacker2.length - 1; i >= 0; i--)  {
+      reverseSplit +=  hacker2[i]
+    } 
+
+console.log("- The driver's name goes first")
+
+// iteration 4 
+
+
+// generate a lotem ipsum 
+
+const paragraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et sem at orci vestibulum dignissim et eu erat. Sed tellus metus, ultricies nec justo ornare, luctus viverra nunc. \
+Etiam leo nunc, fermentum euismod turpis sed, iaculis ornare purus. Curabitur sit amet felis magna. Suspendisse quis urna massa. Cras magna dolor, aliquam vitae ligula vitae, venenatis facilisis arcu.  \
+Sed id varius metus, sed convallis tellus. Sed elementum finibus mauris. Nam eget nunc ipsum. In hac habitasse platea dictumst. \
+Mauris vel mi non dolor bibendum consequat dictum et sem. Nam luctus malesuada odio, sit amet vestibulum eros convallis quis. Duis ac ultrices massa. Integer laoreet non ipsum a imperdiet. \
+ Donec sollicitudin eget diam at faucibus. Integer eu eros sodales lacus dictum eleifend. Donec quis est quis elit maximus mollis. Vestibulum malesuada tortor vel tincidunt fermentum. \
+Integer elementum lacinia tellus. Mauris hendrerit condimentum mauris ac fringilla. Duis quis rutrum quam. Pellentesque mollis posuere ligula rutrum semper. Cras egestas tristique mauris sed ullamcorper. \
+Vivamus consequat varius elit, ac ornare risus luctus id. Nam sed diam vitae purus eleifend iaculis. Nulla mi est, consequat ut ultricies non, vehicula ut mauris. Vestibulum pulvinar tempus facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. \
+Aliquam erat volutpat. Praesent justo risus, vulputate sit amet libero vitae, interdum volutpat urna. Mauris dignissim lorem vitae nibh accumsan volutpat. Mauris ullamcorper vulputate metus in malesuada'
+
+let myResult = 0
+let counter = Array.from(paragraph)
+
+for(let i = 0; i < counter.length; i++) {
+    if (counter[i] == " ") {
+        myResult++;
+    }
+}
+
+console.log(myResult);
+
+/* count the number of words  split method 
+const numberOfWords = (count) => {
+    console.log(numberOfWords(paragraph))
+  return count.split(" ")
+} */
+
+
+
+
+// count occurence of "et"
+
+const numberOfEt = (howMany) => {
+  return  howMany.split("et")
+}
+
+console.log(numberOfEt(paragraph))
