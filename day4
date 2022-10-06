@@ -1,0 +1,107 @@
+// iteration 1 
+
+const greatestOfTwoNumbers = (number1, number2) => {
+    if(number1 > number2)
+       return number1;
+    else
+       return number2;
+  
+  
+  }
+  
+  console.log(greatestOfTwoNumbers(6,9))
+  
+  // iteration 2
+  
+  const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
+  
+  
+  const findLongestWord = (arr) => {
+  
+  let longestWord = ""
+  
+    for(let index =0; index <arr.length; index++){
+      
+      if(arr[index].length > longestWord.length){
+        longestWord=arr[index];
+      }
+  
+    }
+    return longestWord;
+   
+    
+  }
+  
+  console.log(findLongestWord(words))
+  
+  // iteration 3
+  
+  const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+  
+  const sumNumbers = (myNumbers) => {
+  
+    let theResult = 0;
+    
+    for (let myIndex = 0 ; myIndex < myNumbers.length ; myIndex++) {
+    theResult += myNumbers[myIndex];
+    }
+  
+  return theResult
+  
+  }
+  
+  console.log(sumNumbers(numbers))
+  
+  // iteration 3.2
+  
+  const mixedArr = [6, 12, "miami", 1, true, "barca", "200", "lisboa", 8, 10];
+  
+  const sum = array =>  {
+    let finalResult = 0;
+  
+    for (let i = 0; i < array.length; i++) {
+      if (typeof array[i] === "string") {
+        str = array[i].split("");
+        for (let i = 0; i < str.length; i++) {
+          finalResult += str[i].length;
+        }
+      } else if (array[i] === true) {
+        finalResult += 1;
+      } else {
+        finalResult += array[i];
+      }
+    }
+   return finalResult;
+  }
+  
+  console.log(sum(mixedArr))
+  
+  
+  // iteration 4
+  const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
+  
+  const averageNumbers = (array3) => {
+  
+   return (sumNumbers(array3) / array3.length)
+  }
+  
+  console.log(averageNumbers(numbersAvg))
+  
+  // iteration 4.2
+  
+  const words2 = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
+  
+  const averageWordLength = (array) => {
+  let result = 0
+  
+  for (let i = 0; i < array.length ; i++) {
+    result+= array[i].length
+  }
+
+return  result / (array.length)
+
+  }
+  console.log(averageWordLength(words2))
+  
+  
+  // iteration 4.3 
